@@ -1,9 +1,7 @@
 # 🧠 Glaucoma Detection Pipeline using Retinal Fundus Images
 
 ## 📌 Overview
-This project presents an end-to-end glaucoma detection system based on retinal fundus images using a **Quality-Guided Hybrid Ensemble Learning approach**. The pipeline integrates deep learning, clinical feature extraction, and statistical validation to ensure both high performance and clinical relevance.
-
-The system is designed not only for accurate classification but also for **interpretability, reliability, and real-world applicability in healthcare settings**.
+This project presents an end-to-end glaucoma detection system based on retinal fundus images using a **Quality-Guided Hybrid Ensemble Learning approach**. The pipeline integrates deep learning, clinical feature extraction, and statistical validation to ensure both high performance and clinical relevance. The system is designed not only for accurate classification but also for **interpretability, reliability, and real-world applicability in healthcare settings**.
 
 ---
 
@@ -17,6 +15,7 @@ The system is designed not only for accurate classification but also for **inter
 ---
 
 ## 📂 Project Structure
+```
 Glaucoma-GON-detection-and-quality-aware-medical-computer-vision-modeling-IDSC2026/
 │
 ├── Glaucoma Detection Pipeline/
@@ -41,7 +40,7 @@ Glaucoma-GON-detection-and-quality-aware-medical-computer-vision-modeling-IDSC20
 │   ├── 07_clinical/
 │
 ├── README.md
-
+```
 ---
 
 ## 📊 Exploratory Data Analysis
