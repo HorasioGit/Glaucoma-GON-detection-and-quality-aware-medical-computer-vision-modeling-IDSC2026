@@ -18,8 +18,8 @@ This project presents an end-to-end glaucoma detection system based on retinal f
 ```
 Glaucoma-GON-detection-and-quality-aware-medical-computer-vision-modeling-IDSC2026/
 │
-├── Glaucoma Detection Pipeline/
-│   └── [IDSC]_D4.ipynb
+├── MainProgram/
+│   └── [IDSC]_D4_Habib_Nazril_Horasio.ipynb
 │
 ├── data/
 │   └── README.txt
