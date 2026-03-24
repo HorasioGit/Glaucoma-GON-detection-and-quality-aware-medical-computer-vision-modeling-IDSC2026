@@ -24,12 +24,6 @@ Glaucoma-GON-detection-and-quality-aware-medical-computer-vision-modeling-IDSC20
 ├── data/
 │   └── README.txt
 │
-├── models/
-│   ├── best_gradcam_model.pth
-│   ├── mlp_model.pth
-│   ├── xgb_model.json
-│   └── ensemble_config.json
-│
 ├── results/
 │   ├── 01_eda/
 │   ├── 02_preprocessing/
