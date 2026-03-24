@@ -47,28 +47,28 @@ Glaucoma-GON-detection-and-quality-aware-medical-computer-vision-modeling-IDSC20
 ## 📊 Exploratory Data Analysis
 
 ### Label Distribution
-![Label Distribution](results/01_eda/eda_label_distribution.png)
+![Label Distribution](result/01_eda/eda_label_distribution.png)
 
 The dataset shows class imbalance, with GON+ (~73%) dominating GON- (~27%). This imbalance is considered during model training to avoid bias toward the majority class.
 
 ---
 
 ### Patient Distribution
-![Patient Distribution](results/01_eda/eda_patient_distribution.png)
+![Patient Distribution](result/01_eda/eda_patient_distribution.png)
 
 Each patient has multiple images (typically 2–4), highlighting the importance of **patient-level aggregation** to prevent overfitting and data leakage.
 
 ---
 
 ### Quality Score Distribution
-![Quality Score](results/01_eda/eda_quality_score.png)
+![Quality Score](result/01_eda/eda_quality_score.png)
 
 Most images have quality scores above the acceptable threshold (QS > 3). Image quality is later used as a weighting factor in prediction aggregation.
 
 ---
 
 ### Sample Fundus Images
-![Sample Images](results/01_eda/eda_sample_images.png)
+![Sample Images](result/01_eda/eda_sample_images.png)
 
 The dataset contains diverse retinal conditions, showing clear variation between GON+ and GON- cases.
 
@@ -77,7 +77,7 @@ The dataset contains diverse retinal conditions, showing clear variation between
 ## 🧪 Preprocessing & Augmentation
 
 ### Data Augmentation
-![Augmentation](results/02_preprocessing/preprocessing_augmentation.png)
+![Augmentation](result/02_preprocessing/preprocessing_augmentation.png)
 
 To improve model robustness, several augmentation techniques are applied:
 - Horizontal/vertical flipping
@@ -92,14 +92,14 @@ These techniques help the model generalize better to real-world variations.
 ## 🧠 Segmentation & Clinical Feature Extraction
 
 ### Optic Disc and Cup Segmentation
-![Segmentation](results/03_segmentation/segmentation_cdr_visualization.png)
+![Segmentation](result/03_segmentation/segmentation_cdr_visualization.png)
 
 Segmentation is performed to identify the optic disc and optic cup regions. These regions are essential for computing clinical indicators.
 
 ---
 
 ### Cup-to-Disc Ratio (CDR) Distribution
-![CDR Distribution](results/03_segmentation/cdr_distribution.png)
+![CDR Distribution](result/03_segmentation/cdr_distribution.png)
 
 CDR is a key clinical feature for glaucoma diagnosis. The distribution shows that GON+ cases tend to have significantly higher CDR values.
 
@@ -108,7 +108,7 @@ CDR is a key clinical feature for glaucoma diagnosis. The distribution shows tha
 ## 📈 Feature Representation
 
 ### PCA & t-SNE Visualization
-![Feature Space](results/04_feature/feature_space_visualization.png)
+![Feature Space](result/04_feature/feature_space_visualization.png)
 
 Feature space visualization shows partial separation between GON+ and GON-, indicating that the extracted features are informative but the problem remains complex.
 
@@ -117,14 +117,14 @@ Feature space visualization shows partial separation between GON+ and GON-, indi
 ## 🤖 Model Training & Evaluation
 
 ### Learning Curve
-![Learning Curve](results/05_model/mlp_learning_curve.png)
+![Learning Curve](result/05_model/mlp_learning_curve.png)
 
 The model demonstrates stable convergence, with decreasing training loss and slight validation gap, indicating mild overfitting.
 
 ---
 
 ### Model Evaluation (ROC & Confusion Matrix)
-![Evaluation](results/05_model/model_evaluation.png)
+![Evaluation](result/05_model/model_evaluation.png)
 
 The model achieves strong performance:
 - AUC ≈ 0.98  
@@ -135,7 +135,7 @@ The hybrid ensemble model outperforms individual models.
 ---
 
 ### Statistical Validation
-![Statistical Validation](results/05_model/statistical_validation.png)
+![Statistical Validation](result/05_model/statistical_validation.png)
 
 Bootstrap confidence intervals and DeLong tests confirm that the model performance is statistically stable and reliable.
 
@@ -144,14 +144,14 @@ Bootstrap confidence intervals and DeLong tests confirm that the model performan
 ## 🔍 Explainability & Uncertainty
 
 ### Grad-CAM Visualization
-![GradCAM](results/06_explainability/gradcam_visualization.png)
+![GradCAM](result/06_explainability/gradcam_visualization.png)
 
 Grad-CAM highlights that the model focuses on clinically relevant regions (optic disc and cup), improving interpretability.
 
 ---
 
 ### Uncertainty Estimation (MC Dropout)
-![Uncertainty](results/06_explainability/uncertainty_estimation.png)
+![Uncertainty](result/06_explainability/uncertainty_estimation.png)
 
 Monte Carlo Dropout is used to estimate prediction uncertainty. High-confidence predictions show low variance, indicating model reliability.
 
@@ -160,14 +160,14 @@ Monte Carlo Dropout is used to estimate prediction uncertainty. High-confidence 
 ## 🏥 Clinical-Oriented Evaluation
 
 ### Threshold Optimization
-![Threshold](results/07_clinical/threshold_optimization.png)
+![Threshold](result/07_clinical/threshold_optimization.png)
 
 The optimal threshold is set around **0.40**, balancing sensitivity and specificity while prioritizing minimizing false negatives.
 
 ---
 
 ### Patient-Level Aggregation
-![Patient Level](results/07_clinical/patient_level_aggregation.png)
+![Patient Level](result/07_clinical/patient_level_aggregation.png)
 
 Patient-level prediction using quality-weighted aggregation improves performance:
 - AUC ≈ 0.983  
