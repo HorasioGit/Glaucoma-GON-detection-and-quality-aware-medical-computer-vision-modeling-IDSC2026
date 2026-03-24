@@ -201,21 +201,6 @@ https://physionet.org/content/hillel-yaffe-glaucoma-dataset/1.0.0/
 
 ---
 
-## ⚙️ Requirements
-```
-torch
-torchvision
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-xgboost
-opencv-python
-```
-
----
-
 ## 👨‍💻 Author
 
 - Muhammad Habib Nur Aiman, Nazril Ravi Pratama, Horasio Nissi Immanuel  
