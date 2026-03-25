@@ -197,7 +197,16 @@ Dataset used:
 
 Due to licensing restrictions, the dataset is not included in this repository.  
 Please access it via:
-https://physionet.org/content/hillel-yaffe-glaucoma-dataset/1.0.0/
+https://physionet.org/content/hillel-yaffe-glaucoma-dataset/1.0.0
+
+---
+
+## 🌐 Web Application
+
+This project is deployed as a web-based Clinical Decision Support System (CDSS) for real-time glaucoma detection.
+
+🔗 **Access the application here:**  
+https://glaucoma-ai-idsc.vercel.app
 
 ---
 
