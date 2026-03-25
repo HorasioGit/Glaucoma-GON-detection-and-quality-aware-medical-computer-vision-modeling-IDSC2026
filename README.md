@@ -203,7 +203,7 @@ https://physionet.org/content/hillel-yaffe-glaucoma-dataset/1.0.0/
 
 ## 👨‍💻 Author
 
-- Muhammad Habib Nur Aiman, Nazril Ravi Pratama, Horasio Nissi Immanuel  
+- Horasio Nissi Immanuel, Muhammad Habib Nur Aiman, Nazril Ravi Pratama  
 - Universitas Negeri Surabaya  
 
 ---
